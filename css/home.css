@@ -10,6 +10,8 @@
   position: relative;
 }
 
+
+
 .hometext {
   font-family: "Poppins";
   font-weight: 800;
@@ -284,6 +286,7 @@
     display: block; /* Show applyinvest2 */
     right: 10px;
   }
-
-
+  .investment-link {
+    margin-bottom: 20px;
+  }
 }

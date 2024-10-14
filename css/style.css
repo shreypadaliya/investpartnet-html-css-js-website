@@ -6,6 +6,8 @@ body {
     font-family: "Poppins", "Roboto", sans-serif;
   }
 
+ 
+
   .container {
     max-width: 1586px;
     margin-inline: auto;
@@ -34,7 +36,7 @@ body {
   }
 
   .navmenu a:hover {
-    color: #6c738c;
+    color: #004C6D;
   }
 
   .dropdown {
