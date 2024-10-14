@@ -259,3 +259,31 @@
   max-width: 233px;
   margin-bottom: 19px;
 }
+
+
+.applyinvesticon {
+  display: none;
+  border-radius: 5px;
+  border: 1px solid #14729b;
+  background-color: #14729b;
+  padding: 10px 15px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  position: fixed;
+  /* right: 50%; */
+  bottom: 10px !important;
+  z-index: 3;
+}
+
+@media (max-width: 768px) {
+  .applyinvest {
+    display: none; /* Hide applyinvest */
+  }
+  
+  .applyinvesticon {
+    display: block; /* Show applyinvest2 */
+    right: 10px;
+  }
+}
