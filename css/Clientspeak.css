@@ -90,6 +90,12 @@
   border-radius: 50%;
   object-fit: cover;
 }
+@media (max-width: 768px) {
+  .testimonial-avatar {
+    width: 50px;  /* Smaller width for small screens */
+    height: 50px; /* Smaller height for small screens */
+  }
+}
 
 .testimonial-nav-btn {
   background-color: rgb(52, 110, 138);
