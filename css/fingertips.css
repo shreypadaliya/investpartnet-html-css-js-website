@@ -85,8 +85,6 @@
     max-width: 600px !important;
   }
   
-
-  
   .main-heading {
     font-size: 40px;
     line-height: 48px;
@@ -96,6 +94,7 @@
     font-size: 18px;
     line-height: 26px;
   }
+  
 }
 
 
@@ -183,6 +182,31 @@
     width: 100%;
   } */
 }
+
+.fingertipformel{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px
+  ;
+}
+
+/* @media (max-width: 1523px) {
+
+  .main-heading{
+    text-align: center;
+  }
+  .sub-heading{
+    text-align: center;
+  }
+
+
+
+} */
+
+
+
+
+
 
 
 
