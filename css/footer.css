@@ -68,6 +68,10 @@
   justify-content: center;
   height: 40px;
   width: 40px;
+  transition: background-color 0.3s;
+}
+.mediaholder:hover {
+  background-color: #cccccc; /* Darker background color on hover */
 }
 
 .mediaholder img {

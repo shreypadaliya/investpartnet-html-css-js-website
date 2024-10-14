@@ -23,7 +23,7 @@
 .clientpara {
   font-size: 22px;
   line-height: 44px;
-  font-weight: 400;
+  font-weight: 100;
   font-family: "poppins";
   color: white;
 }
@@ -77,7 +77,7 @@
 
 .slider2-text {
   font-family: "poppins";
-  font-weight: 400;
+  font-weight: 100;
   font-size: 38px;
   line-height: 60px;
   text-align: justify;
@@ -98,7 +98,12 @@
   height: 50px;
   width: 50px;
   border-radius: 100%;
+  transition: background-color 0.3s;
 }
+.testimonial-nav-btn:hover {
+  background-color: #adb5bd
+}
+
 
 .slider2gap {
   gap: 20px;
