@@ -1,0 +1,150 @@
+.firstmain {
+  display: flex;
+  margin-top: 140px;
+  margin-bottom: 140px;
+}
+
+.firstofinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.firstheading {
+  font-size: 42px;
+  line-height: 55px;
+  color: #004c6d;
+  font-weight: 500;
+  font-family: "Poppins";
+}
+
+.firstline {
+  height: 5px !important;
+  border-radius: 5px;
+  background-color: #004c6d;
+  max-width: 148px;
+  margin-top: 24px;
+  margin-bottom: 20px;
+}
+
+.firstsemihead {
+  font-size: 20px;
+  line-height: 30px;
+  color: #004c6d;
+  font-weight: 600;
+  font-family: "Poppins";
+  margin-bottom: 10px;
+}
+
+.firstsubtitle {
+  font-size: 16px;
+  line-height: 30px;
+  color: #6c738c;
+  font-weight: 500;
+  font-family: "Poppins";
+}
+
+.firstimage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  height: 100%;
+}
+
+.firstimage img {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+  margin-right: 0px !important;
+}
+
+@media (max-width: 1399px) {
+  .firstmain {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    flex-direction: column;
+  }
+
+  .firstheading {
+    font-size: 38px;
+    line-height: 50px;
+  }
+
+  .firstsemihead {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .firstmain {
+    flex-direction: column;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .firstofinfo {
+    margin-bottom: 40px;
+  }
+
+  .firstheading {
+    font-size: 34px;
+    line-height: 45px;
+  }
+
+  .firstimage img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .firstmain {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .firstheading {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .firstsemihead {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .firstsubtitle {
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 479px) {
+  .firstmain {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .firstheading {
+    font-size: 26px;
+    line-height: 35px;
+  }
+
+  .firstline {
+    max-width: 100px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .firstsemihead {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .firstsubtitle {
+    font-size: 13px;
+    line-height: 24px;
+  }
+}

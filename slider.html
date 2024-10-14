@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Slider</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .slider-container {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .slider-content {
+            min-height: 200px;
+        }
+        .arrow-btn {
+            background-color: #e9ecef;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .arrow-btn:hover {
+            background-color: #dee2e6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="slider-container">
+            <div class="slider-content mb-4">
+                <h2 id="slider-heading" class="mb-3">Who We Are?</h2>
+                <p id="slider-paragraph">A pre-seed and seed fund manager with an acceleration arm that offers growth support services, that invest in high-growth Information & Communication Technologies & creatively designed product startups at their early stages, with the aim of advancing the entrepreneurial ecosystem in Jordan and the MENA region.</p>
+            </div>
+            <div class="d-flex justify-content-between">
+                <button class="arrow-btn" id="prev-btn">&lt;</button>
+                <button class="arrow-btn" id="next-btn">&gt;</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const contents = [
+            {
+                heading: "Who We Are?",
+                paragraph: "A pre-seed and seed fund manager with an acceleration arm that offers growth support services, that invest in high-growth Information & Communication Technologies & creatively designed product startups at their early stages, with the aim of advancing the entrepreneurial ecosystem in Jordan and the MENA region."
+            },
+            {
+                heading: "Our Mission",
+                paragraph: "To empower innovative startups and foster technological advancement in the MENA region, driving economic growth and creating opportunities for talented entrepreneurs."
+            },
+            {
+                heading: "Our Vision",
+                paragraph: "To become the leading catalyst for technological innovation and entrepreneurial success in Jordan and the broader MENA region, shaping a vibrant and sustainable startup ecosystem."
+            }
+        ];
+
+        let currentIndex = 0;
+        const headingElement = document.getElementById('slider-heading');
+        const paragraphElement = document.getElementById('slider-paragraph');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+
+        function updateContent() {
+            headingElement.textContent = contents[currentIndex].heading;
+            paragraphElement.textContent = contents[currentIndex].paragraph;
+        }
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + contents.length) % contents.length;
+            updateContent();
+        });
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % contents.length;
+            updateContent();
+        });
+    </script>
+</body>
+</html>

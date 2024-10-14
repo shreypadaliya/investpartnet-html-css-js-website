@@ -1,0 +1,388 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Testimonial Slider</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+      .client-image-container {
+        width: 100%;
+        max-width: 562px;
+        height: 580px;
+        overflow: hidden;
+        border-radius: 10px;
+        position: relative;
+      }
+      .client-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .companyinfo {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+      }
+      .testimonial-box {
+        background-color: white;
+        border: 2px solid #00ffff;
+        border-radius: 10px;
+        /* padding: 20px;
+            margin-top: 20px; */
+      }
+      .client-avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .arrow-btn {
+        background-color: transparent;
+        border: none;
+        color: black;
+        font-size: 24px;
+        cursor: pointer;
+      }
+      @media (max-width: 768px) {
+        .client-image-container {
+          height: auto;
+          aspect-ratio: 562 / 580;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Know what Client Speaks</h2>
+      <p>
+        Our Clients send us bunch of smilies with our services and we love them
+      </p>
+
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-5">
+          <div class="client-image-container">
+            <img
+              id="clientImage"
+              src="investment-html-main/assets/Check_3_Pcs_Suit_In_Maroon_Wester-CPNM1977R1BA23FL-image1.webp"
+              class="client-image"
+              alt="Client"
+            />
+            <div class="mt-3 companyinfo">
+              <h5 id="clientName" class="mb-0"></h5>
+              <p id="clientCompany" class="mb-0"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="testimonial-box">
+            <p id="testimonialText"></p>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mt-4">
+            <div class="d-flex">
+              <img
+                src="investment-html-main/assets/Check_3_Pcs_Suit_In_Maroon_Wester-CPNM1977R1BA23FL-image1.webp"
+                alt="Client 1"
+                class="client-avatar me-2"
+              />
+              <img
+                src="investment-html-main/assets/IMG_0228_754a69c3-fbcd-41c4-9b39-9191ceb64cf4.webp"
+                alt="Client 2"
+                class="client-avatar me-2"
+              />
+              <img
+                src="investment-html-main/assets/MSU-0006_F.webp"
+                alt="Client 3"
+                class="client-avatar me-2"
+              />
+              <img
+                src="investment-html-main/assets/SageGreenThreePiece_1.webp"
+                alt="Client 4"
+                class="client-avatar me-2"
+              />
+              <img
+                src="investment-html-main/assets/spotlight-collection-mens-2.webp"
+                alt="Client 5"
+                class="client-avatar"
+              />
+            </div>
+          </div>
+          <div>
+            <button id="prevBtn" class="arrow-btn">&lt;</button>
+            <button id="nextBtn" class="arrow-btn">&gt;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const testimonials = [
+        {
+          name: "Hassan Atmeh",
+          company: "Repzo",
+          image:
+            "investment-html-main/assets/Check_3_Pcs_Suit_In_Maroon_Wester-CPNM1977R1BA23FL-image1.webp",
+          text: "Oasis500 has helped us build a product, go to market, acquire customers and raise funding. A true investment partner.",
+        },
+        {
+          name: "Sarah Johnson",
+          company: "TechInnovate",
+          image:
+            "investment-html-main/assets/IMG_0228_754a69c3-fbcd-41c4-9b39-9191ceb64cf4.webp",
+          text: "Working with Oasis500 has been transformative for our startup. Their guidance and support have been invaluable.",
+        },
+        {
+          name: "Ahmed Al-Mansour",
+          company: "DataDrive",
+          image: "investment-html-main/assets/MSU-0006_F.webp",
+          text: "Oasis500's network and mentorship program gave us the boost we needed to scale our operations across the MENA region.",
+        },
+        {
+          name: "Ahmed Al-Mansour",
+          company: "IQEZ",
+          image: "investment-html-main/assets/SageGreenThreePiece_1.webp",
+          text: "Oasis500's network and mentorship program gave us the boost we needed to scale our operations across the MENA region.",
+        },
+        {
+          name: "Ahmed Al-Mansour",
+          company: "Facebook",
+          image: "investment-html-main/assets/spotlight-collection-mens-2.webp",
+          text: "Oasis500's network and mentorship program gave us the boost we needed to scale our operations across the MENA region.",
+        },
+      ];
+
+      let currentIndex = 0;
+
+      const clientImage = document.getElementById("clientImage");
+      const testimonialText = document.getElementById("testimonialText");
+      const clientName = document.getElementById("clientName");
+      const clientCompany = document.getElementById("clientCompany");
+      const prevBtn = document.getElementById("prevBtn");
+      const nextBtn = document.getElementById("nextBtn");
+
+      function updateTestimonial() {
+        const testimonial = testimonials[currentIndex];
+        clientImage.src = testimonial.image;
+        testimonialText.textContent = testimonial.text;
+        clientName.textContent = testimonial.name;
+        clientCompany.textContent = testimonial.company;
+      }
+
+      prevBtn.addEventListener("click", () => {
+        currentIndex =
+          (currentIndex - 1 + testimonials.length) % testimonials.length;
+        updateTestimonial();
+      });
+
+      nextBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % testimonials.length;
+        updateTestimonial();
+      });
+
+      updateTestimonial();
+    </script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Testimonial Slider</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .testimonial-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+      .testimonial-image-container {
+        width: 100%;
+        max-width: 562px;
+        height: 580px;
+        overflow: hidden;
+        border-radius: 10px;
+        position: relative;
+      }
+      .testimonial-client-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .testimonial-company-info {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+      }
+      .testimonial-content-box {
+        background-color: white;
+        border: 2px solid #00ffff;
+        border-radius: 10px;
+      }
+      .testimonial-avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .testimonial-nav-btn {
+        background-color: transparent;
+        border: none;
+        color: black;
+        font-size: 24px;
+        cursor: pointer;
+      }
+      @media (max-width: 768px) {
+        .testimonial-image-container {
+          height: auto;
+          aspect-ratio: 562 / 580;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="testimonial-container">
+      <h2>Know what Client Speaks</h2>
+      <p>
+        Our Clients send us bunch of smilies with our services and we love them
+      </p>
+
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-5">
+          <div class="testimonial-image-container">
+            <img
+              id="testimonial-slider-image"
+              src="investment-html-main/assets/Check_3_Pcs_Suit_In_Maroon_Wester-CPNM1977R1BA23FL-image1.webp"
+              class="testimonial-client-image"
+              alt="Client"
+            />
+            <div class="mt-3 testimonial-company-info">
+              <h5 id="testimonial-slider-name" class="mb-0"></h5>
+              <p id="testimonial-slider-company" class="mb-0"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="testimonial-content-box">
+            <p id="testimonial-slider-text"></p>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mt-4">
+            <div class="d-flex">
+              <img
+                src="investment-html-main/assets/Check_3_Pcs_Suit_In_Maroon_Wester-CPNM1977R1BA23FL-image1.webp"
+                alt="Client 1"
+                class="testimonial-avatar me-2"
+              />
+              <img
+                src="investment-html-main/assets/IMG_0228_754a69c3-fbcd-41c4-9b39-9191ceb64cf4.webp"
+                alt="Client 2"
+                class="testimonial-avatar me-2"
+              />
+              <img
+                src="investment-html-main/assets/MSU-0006_F.webp"
+                alt="Client 3"
+                class="testimonial-avatar me-2"
+              />
+              <img
+                src="investment-html-main/assets/SageGreenThreePiece_1.webp"
+                alt="Client 4"
+                class="testimonial-avatar me-2"
+              />
+              <img
+                src="investment-html-main/assets/spotlight-collection-mens-2.webp"
+                alt="Client 5"
+                class="testimonial-avatar"
+              />
+            </div>
+          </div>
+          <div>
+            <button id="testimonial-slider-prev" class="testimonial-nav-btn">&lt;</button>
+            <button id="testimonial-slider-next" class="testimonial-nav-btn">&gt;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const testimonialData = [
+        {
+          name: "Hassan Atmeh",
+          company: "Repzo",
+          image:
+            "investment-html-main/assets/Check_3_Pcs_Suit_In_Maroon_Wester-CPNM1977R1BA23FL-image1.webp",
+          text: "Oasis500 has helped us build a product, go to market, acquire customers and raise funding. A true investment partner.",
+        },
+        {
+          name: "Sarah Johnson",
+          company: "TechInnovate",
+          image:
+            "investment-html-main/assets/IMG_0228_754a69c3-fbcd-41c4-9b39-9191ceb64cf4.webp",
+          text: "Working with Oasis500 has been transformative for our startup. Their guidance and support have been invaluable.",
+        },
+        {
+          name: "Ahmed Al-Mansour",
+          company: "DataDrive",
+          image: "investment-html-main/assets/MSU-0006_F.webp",
+          text: "Oasis500's network and mentorship program gave us the boost we needed to scale our operations across the MENA region.",
+        },
+        {
+          name: "Laila Hassan",
+          company: "IQEZ",
+          image: "investment-html-main/assets/SageGreenThreePiece_1.webp",
+          text: "The resources and connections provided by Oasis500 were instrumental in helping us expand our market reach.",
+        },
+        {
+          name: "Omar Farooq",
+          company: "TechVista",
+          image: "investment-html-main/assets/spotlight-collection-mens-2.webp",
+          text: "Oasis500's expertise in the MENA startup ecosystem has been crucial for our growth and success in the region.",
+        },
+      ];
+
+      let currentTestimonialIndex = 0;
+
+      const testimonialImage = document.getElementById("testimonial-slider-image");
+      const testimonialContent = document.getElementById("testimonial-slider-text");
+      const testimonialName = document.getElementById("testimonial-slider-name");
+      const testimonialCompany = document.getElementById("testimonial-slider-company");
+      const testimonialPrevBtn = document.getElementById("testimonial-slider-prev");
+      const testimonialNextBtn = document.getElementById("testimonial-slider-next");
+
+      function updateTestimonialSlider() {
+        const testimonial = testimonialData[currentTestimonialIndex];
+        testimonialImage.src = testimonial.image;
+        testimonialContent.textContent = testimonial.text;
+        testimonialName.textContent = testimonial.name;
+        testimonialCompany.textContent = testimonial.company;
+      }
+
+      testimonialPrevBtn.addEventListener("click", () => {
+        currentTestimonialIndex =
+          (currentTestimonialIndex - 1 + testimonialData.length) % testimonialData.length;
+        updateTestimonialSlider();
+      });
+
+      testimonialNextBtn.addEventListener("click", () => {
+        currentTestimonialIndex = (currentTestimonialIndex + 1) % testimonialData.length;
+        updateTestimonialSlider();
+      });
+
+      // Initialize the testimonial slider
+      updateTestimonialSlider();
+    </script>
+  </body>
+</html>

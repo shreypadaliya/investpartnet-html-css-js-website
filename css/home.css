@@ -1,0 +1,261 @@
+.homebackimg {
+  background-image: url("../assets/Mask group.png");
+  height: 80vh;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hometext {
+  font-family: "Poppins";
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 120px;
+  color: #ffffff;
+  text-align: center;
+  max-width: 775px;
+}
+
+.frameicon {
+  position: absolute;
+  bottom: 20px;
+}
+
+.applyinvest {
+  border-radius: 5px;
+  border: 1px solid #14729b;
+  background-color: #14729b;
+  padding: 15px 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  position: fixed;
+  right: 190px;
+  bottom: 80px;
+  z-index: 2;
+}
+
+.applyinvest:hover {
+  background-color: #0a5b7c;
+
+  transform: scale(1.05);
+}
+
+@media (max-width: 1399px) {
+  .applyinvest {
+    border-radius: 5px;
+    border: 1px solid #14729b;
+    background-color: #14729b;
+    padding: 15px 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    position: fixed;
+    right: 90px !important;
+    bottom: 90px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hometext {
+    font-size: 5vw;
+    line-height: 1.2em;
+    max-width: 80%;
+  }
+
+  .applyinvest {
+    border-radius: 5px;
+    border: 1px solid #14729b;
+    background-color: #14729b;
+    padding: 15px 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    position: fixed;
+    right: 90px !important;
+    bottom: 90px !important;
+  }
+
+  .investment-div {
+    display: none;
+    position: fixed;
+    right: 90px !important;
+    bottom: 200px;
+
+    max-width: 502px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 38px 22px;
+
+    z-index: 10;
+  }
+}
+
+@media (max-width: 768px) {
+  .hometext {
+    font-size: 7vw;
+    line-height: 1.3em;
+    max-width: 90%;
+  }
+
+  .applyinvest {
+    border-radius: 5px;
+    border: 1px solid #14729b;
+    background-color: #14729b;
+    padding: 15px 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    position: fixed;
+    right: 10px !important;
+    bottom: 90px !important;
+  }
+
+  .investment-div {
+    display: none;
+    position: fixed;
+    right: 10px !important;
+    bottom: 160px;
+
+    max-width: 502px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 38px 22px;
+
+    z-index: 10;
+  }
+}
+
+@media (max-width: 480px) {
+  .hometext {
+    font-size: 8vw;
+    line-height: 1.4em;
+    max-width: 95%;
+  }
+
+  .applyinvest {
+    border-radius: 5px;
+    border: 1px solid #14729b;
+    background-color: #14729b;
+    padding: 15px 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    position: fixed;
+    right: 50%;
+    bottom: 90px !important;
+  }
+
+  .investment-div {
+    display: none;
+    position: fixed;
+    right: 0% !important;
+    bottom: 160px;
+
+    max-width: 502px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 38px 22px;
+
+    z-index: 10;
+  }
+}
+
+.investment-div {
+  display: none;
+  position: fixed;
+  right: 190px;
+  bottom: 200px;
+
+  max-width: 502px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 38px 22px;
+
+  z-index: 10;
+}
+
+.imgclose {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.investment-logo {
+  height: 35px;
+  max-width: 149px;
+}
+
+.close-btn {
+  cursor: pointer;
+  font-size: 30px;
+  color: #5e5873;
+  background-color: #e2e6ea;
+  height: 40px;
+  width: 40px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  border-radius: 100%;
+  align-items: center;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+.investment-link {
+  background-color: #e4f1fb;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  width: 100%;
+  margin-bottom: 57px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  font-family: "poppins";
+  color: #004c6d;
+}
+
+.apply-now {
+  background-color: #0a5b7c;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.apply-now:hover {
+  background-color: #14729b;
+}
+
+.applyhead {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  font-family: "poppins";
+  max-width: 233px;
+  margin-bottom: 19px;
+}

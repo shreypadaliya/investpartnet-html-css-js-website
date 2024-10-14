@@ -1,0 +1,299 @@
+.footermain {
+  background-image: url("../assets/Group\ 28186445.png");
+  padding: 56px 0px 56px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footdiv1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.semifoot1 {
+  display: flex;
+  gap: 73px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.companywrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.comapnylogo {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: "poppins";
+  color: white;
+  margin-bottom: 15px;
+}
+
+.companyemail {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: "poppins";
+  color: white;
+}
+
+.socialwrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.socialogo {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: "poppins";
+  color: white;
+  margin-bottom: 6px;
+}
+
+.socialholder {
+  display: flex;
+  gap: 24px;
+}
+
+.mediaholder {
+  background-color: #ffffff5e;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+}
+
+.mediaholder img {
+  margin-right: 0px;
+}
+
+.partnerheader {
+  font-family: "poppins";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  text-align: start;
+}
+
+.parterimgwrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  flex-wrap: wrap;
+}
+
+.rightreserved {
+  font-family: "poppins";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: white;
+  text-align: center;
+  margin-top: 61px;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .footermain {
+    padding: 50px 0px 50px 0px;
+  }
+
+  .semifoot1 {
+    gap: 60px;
+  }
+
+  .parterimgwrap {
+    gap: 15px;
+  }
+
+  .rightreserved {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .footermain {
+    padding: 40px 0px 40px 0px;
+  }
+
+  .footdiv1 {
+    gap: 30px;
+  }
+
+  .semifoot1 {
+    gap: 45px;
+  }
+
+  .parterimgwrap {
+    gap: 12px;
+  }
+
+  .rightreserved {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footermain {
+    padding: 30px 0px 30px 0px;
+  }
+
+  .footdiv1 {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .semifoot1 {
+    gap: 30px;
+    justify-content: space-between;
+  }
+
+  .socialholder {
+    gap: 20px;
+  }
+
+  .parterimgwrap {
+    gap: 10px;
+    justify-content: flex-start;
+  }
+
+  .rightreserved {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footermain {
+    padding: 25px 0px 25px 0px;
+  }
+
+  .semifoot1 {
+    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .socialholder {
+    gap: 15px;
+  }
+
+  .mediaholder {
+    height: 35px;
+    width: 35px;
+  }
+
+  .parterimgwrap {
+    gap: 8px;
+  }
+
+  .rightreserved {
+    margin-top: 25px;
+  }
+}
+
+/* .footermain {
+  background-image: url("../assets/Group\ 28186445.png");
+  padding: 56px 0px 56px 0px;
+}
+
+.footdiv1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.semifoot1 {
+  display: flex;
+  gap: 73px;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+.companywrap {
+  display: flex;
+  flex-direction: column;
+}
+.comapnylogo {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: "poppins";
+  color: white;
+  margin-bottom: 15px;
+}
+.companyemail {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: "poppins";
+  color: white;
+}
+.socialwrapper {
+  display: flex;
+  flex-direction: column;
+}
+.socialogo {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: "poppins";
+  color: white;
+  margin-bottom: 6px;
+}
+.socialholder{
+    display: flex;
+    gap: 24px;
+}
+
+.mediaholder{
+    background-color:#FFFFFF5E ;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    
+}
+
+.mediaholder img{
+   margin-right: 0px;
+}
+
+.partnerheader{
+ font-family: "poppins";
+ font-weight: 700;
+ font-size: 16px;
+ line-height: 24px;
+ color: white;
+ text-align: start;
+ 
+}
+.parterimgwrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    flex-wrap: wrap;
+}
+.rightreserved{
+    font-family: "poppins";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 61px;
+} 
+
+
+ */

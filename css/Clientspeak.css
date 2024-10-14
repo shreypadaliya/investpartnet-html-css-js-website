@@ -1,0 +1,346 @@
+.clientmain {
+  padding: 80px 0px 80px 0px;
+  background-image: url('../assets/Mask\ group\ \(1\).png');
+  position: relative;
+}
+
+.clienthead {
+  font-size: 42px;
+  line-height: 80px;
+  font-weight: 400;
+  font-family: "poppins";
+  color: white;
+}
+
+.clientheadspan {
+  font-size: 42px;
+  line-height: 70px;
+  font-weight: 700;
+  font-family: "poppins";
+  color: white;
+}
+
+.clientpara {
+  font-size: 22px;
+  line-height: 44px;
+  font-weight: 400;
+  font-family: "poppins";
+  color: white;
+}
+
+.slider2main {
+  margin-top: 56px;
+  gap: 50px;
+}
+
+.testimonial-image-container {
+  width: 100%;
+  max-width: 562px;
+  height: 580px;
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonial-client-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-company-info {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  padding: 37px 111px 36px 36px;
+  background-color: #034460;
+}
+
+.companyemploye {
+  font-family: "poppins";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 22px;
+  color: white;
+}
+
+.companymainname {
+  font-family: "poppins";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 22px;
+  color: white;
+}
+
+.testimonial-content-box {
+  max-width: 915px;
+}
+
+.slider2-text {
+  font-family: "poppins";
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 60px;
+  text-align: justify;
+  color: white;
+}
+
+.testimonial-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-nav-btn {
+  background-color: rgb(52, 110, 138);
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}
+
+.slider2gap {
+  gap: 20px;
+  margin-top: 63px;
+}
+
+.buttonholder {
+  display: flex;
+  gap: 40px;
+  margin-top: 63px;
+}
+
+.frameiconslider {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+}
+
+@media (max-width: 768px) {
+  .clientmain {
+    padding: 40px 0px 40px 0px;
+    overflow: hidden;
+  }
+
+  .clienthead, .clientheadspan {
+    font-size: 32px;
+    line-height: 50px;
+  }
+
+  .clientpara {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .slider2main {
+    margin-top: 30px;
+    gap: 30px;
+  }
+
+  .testimonial-image-container {
+    height: auto;
+    aspect-ratio: 562 / 580;
+  }
+
+  .testimonial-company-info {
+    padding: 20px 60px 20px 20px;
+  }
+
+  .companyemploye {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .companymainname {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .slider2-text {
+    font-size: 28px;
+    line-height: 44px;
+  }
+
+  .slider2gap {
+    gap: 15px;
+    margin-top: 40px;
+  }
+
+  .buttonholder {
+    gap: 20px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .clienthead, .clientheadspan {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .clientpara {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .slider2-text {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .testimonial-company-info {
+    padding: 15px 40px 15px 15px;
+  }
+
+  .companyemploye {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .companymainname {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .testimonial-nav-btn {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+
+/* 
+
+.clientmain {
+  padding: 80px 0px 80px 0px;
+  background-image: url('../assets/Mask\ group\ \(1\).png');
+  position: relative;
+}
+
+.clienthead {
+  font-size: 42px;
+  line-height: 80px;
+  font-weight: 400;
+  font-family: "poppins";
+  color: white;
+  
+}
+
+.clientheadspan {
+  font-size: 42px;
+  line-height: 70px;
+  font-weight: 700;
+  font-family: "poppins";
+  color: white;
+}
+
+.clientpara {
+  font-size: 22px;
+  line-height: 44px;
+  font-weight: 400;
+  font-family: "poppins";
+  color: white;
+}
+
+.slider2main {
+  margin-top: 56px;
+  gap: 50px;
+}
+
+.testimonial-image-container {
+  width: 100%;
+  max-width: 562px;
+  height: 580px;
+  overflow: hidden;
+ 
+  position: relative;
+}
+
+.testimonial-client-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-company-info {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  padding: 37px 111px 36px 36px;
+  background-color: #034460;
+}
+
+.companyemploye {
+  font-family: "poppins";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 22px;
+  color: white;
+}
+
+.companymainname {
+  font-family: "poppins";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 22px;
+  color: white;
+}
+
+.testimonial-content-box {
+  
+  max-width: 915px;
+}
+
+.slider2-text {
+  font-family: "poppins";
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 60px;
+  text-align: justify;
+  color: white;
+}
+
+.testimonial-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-nav-btn {
+  background-color: rgb(52, 110, 138);
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+
+}
+
+@media (max-width: 768px) {
+  .testimonial-image-container {
+    height: auto;
+    aspect-ratio: 562 / 580;
+  }
+}
+
+.slider2gap {
+  gap: 20px;
+  margin-top: 63px;
+}
+
+.buttonholder {
+  display: flex;
+  gap: 40px;
+  margin-top: 63px;
+}
+
+.frameiconslider {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+}
+ */
+
+

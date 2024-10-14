@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Navbar</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/home.css" />
+  <link rel="stylesheet" href="./css/firstofkind.css" />
+  <link rel="stylesheet" href="./css//tribe.css" />
+  <link rel="stylesheet" href="./css/Achivment.css" />
+  <link rel="stylesheet" href="./css/fingertips.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+  <link rel="stylesheet" href="./css/whoweare.css" />
+  <link rel="stylesheet" href="./css/Clientspeak.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet" />
+  <style></style>
+</head>
+<body>
+  <!-- navbar -->
+  <div>
+    <div class="container">
+      <div class="navitem">
+        <div><img src="assets/White logo.png" alt="Logo" /></div>
+        <div class="hamburger" id="hamburger-btn">
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+        </div>
+        <div class="navmenu" id="navmenu">
+          <a href="#">Home</a>
+          <a href="#">Our Tribe</a>
+          <a href="#">Team</a>
+          <a href="#">Resources</a>
+          <div class="dropdown">
+            <a href="#">News <img src="assets/Vector (8).png" alt="" /></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Latest News</a></li>
+              <li><a href="#">Updates</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="language-dropdown">
+          <button class="dropdown-toggle" id="selectedLanguage">
+            <img id="flag" src="assets/Clip path group.png" alt="Arabic" width="30" height="20" />
+            <span id="language">عربي</span>
+            <img class="dropimg" src="assets/Vector (8).png" alt="" />
+          </button>
+          <ul class="dropdown-menu" id="languageDropdown">
+            <li data-flag="assets/Clip path group.png" data-lang="عربي">
+              <img src="assets/Clip path group.png" alt="Arabic" width="30" height="20" />
+              عربي
+            </li>
+            <li
+              data-flag="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/2560px-Flag_of_the_United_States.svg.png"
+              data-lang="English">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/2560px-Flag_of_the_United_States.svg.png"
+                alt="English" width="30" height="20" />
+              English
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Home Page -->
+  <div class="homebackimg">
+    <div class="hometext">YOUR INVESTMENT PARTNER</div>
+    <img src="assets/Frame.png" alt="" class="frameicon" />
+    <button class="applyinvest" id="applyButton">Apply For Investment</button>
+  </div>
+
+  <!-- Hidden div to show when button is clicked -->
+  <div class="investment-div" id="investmentDiv">
+    <div class="imgclose">
+      <img src="assets/White logo.png" alt="Logo" class="investment-logo" />
+    <div class="close-btn" id="closeBtn">×</div>
+    </div>
+    <h2 class="applyhead">Let’s apply for Investment</h2>
+    <input type="text" value="https://oasis500.com/en/" readonly class="investment-link" />
+    <button class="apply-now">Apply Now</button>
+
+  </div>
+
+  <!-- first of its kind -->
+  <div class="container firstmain">
+    <div class="firstofinfo">
+      <div class="firstheading">First-Of-Its-Kind</div>
+      <div class="firstline"></div>
+      <div class="firstsemihead">
+        The first-of-its-kind accelerator in the MENA region
+      </div>
+      <div class="firstsubtitle">
+        Oasis500 is a pre-seed and seed fund manager and accelerator that aims
+        to catalyze the entrepreneurial ecosystem in Jordan and the MENA
+        region. By creating viable opportunities for aspiring entrepreneurs to
+        bridge their know-how gap, access funding, network with industry
+        specialists and build their own companies, Oasis500 seeks to nurture
+        robust companies that develop value-adding products and services,
+        create jobs, generate revenue and ultimately contribute to the
+        national economy.
+      </div>
+    </div>
+    <div class="firstimage" class="firstmainimage">
+      <img src="assets/screen.png" alt="" />
+    </div>
+  </div>
+
+  <!-- ourtribe -->
+  <div class="ourtribemain">
+    <div class="container tribesemi">
+      <div class="tribe1">
+        <div class="headwrapper">
+          <div class="tribehead">Our Tribe</div>
+          <div class="hline"></div>
+        </div>
+        <div class="frame1div">
+          <img src="assets/Frame (1).png" alt="" />
+        </div>
+      </div>
+
+      <div class="row imagespace">
+        <div class="col-6 col-sm-4 col-md-2">
+          <img src="assets/dwyvi8epos7ht0gkq1g6 1.png" alt="MadfooatCom" class="img-fluid" />
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <img src="assets/Group.png" alt="Salasil Solutions" class="img-fluid" />
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <img src="assets/Jamalon-logo 1.png" alt="Jamalon" class="img-fluid" />
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <img src="assets/beloforon 1.png" alt="Bilforon" class="img-fluid" />
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <img src="assets/Group (1).png" alt="Arabia Weddings" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Our achivement -->
+  <div class="achievementmain">
+    <div class="container">
+      <div class="achivewrap">
+        <div class="achievetitle">Our Achievements</div>
+        <div class="achiveline"></div>
+      </div>
+
+      <!-- <div class="container"> -->
+      <div class="row achievespace achivemargin1">
+        <div class="col-6 col-sm-4 col-md-2 achivesemiwrap">
+          <div><img src="assets/Mask group (10).png" alt="" /></div>
+          <div class="latterwrap">
+            <div class="achivesemihead">1700</div>
+            <div class="achivesemisub">Application Received</div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 achivesemiwrap">
+          <div><img src="assets/Mask group (11).png" alt="" /></div>
+          <div>
+            <div class="achivesemihead">180</div>
+            <div class="achivesemisub">Investments</div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 achivesemiwrap">
+          <div><img src="assets/Mask group (7).png" alt="" /></div>
+          <div>
+            <div class="achivesemihead">$10.9M</div>
+            <div class="achivesemisub">Total Amount Invested</div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 achivesemiwrap">
+          <div><img src="assets/exit 1.png" alt="" /></div>
+          <div>
+            <div class="achivesemihead">05</div>
+            <div class="achivesemisub">Exits</div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 achivesemiwrap">
+          <div><img src="assets/Mask group (8).png" alt="" /></div>
+          <div>
+            <div class="achivesemihead">40%</div>
+            <div class="achivesemisub">Female Founders</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row achievespace achivemargin2">
+        <div class="col-6 col-sm-4 col-md-2 achivesemiwrap">
+          <div><img src="assets/Mask group (10).png" alt="" /></div>
+          <div>
+            <div class="achivesemihead">$8</div>
+            <div class="achivesemisub">
+              Invested For 3rd Party Against Each $1
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 achivesemiwrap">
+          <div><img src="assets/Mask group (11).png" alt="" /></div>
+          <div>
+            <div class="achivesemihead">1,000</div>
+            <div class="achivesemisub">Direct Jobs Created</div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 achivesemiwrap">
+          <div><img src="assets/Mask group (7).png" alt="" /></div>
+          <div>
+            <div class="achivesemihead">4,500</div>
+            <div class="achivesemisub">Indirect Jobs Created</div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 achivesemiwrap">
+          <div><img src="assets/exit 1.png" alt="" /></div>
+          <div>
+            <div class="achivesemihead">$1,000</div>
+            <div class="achivesemisub">Average Salaries</div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 achivesemiwrap">
+          <div><img src="assets/Mask group (8).png" alt="" /></div>
+          <div>
+            <div class="achivesemihead">200</div>
+            <div class="achivesemisub">Aggregated Valuation Of Portfolio</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- finger tips -->
+  <div class="tipsmain">
+    <div class="container">
+      <div class="fingerwrap">
+        <div class="fingerleft">
+          <img src="assets/Frame 1000000945.png" alt="" />
+        </div>
+        <div class="fingerright">
+          <div class="formwrap">
+            <div class="newsletter-box">
+              <h1 class="main-heading">At your finger tips</h1>
+              <p class="sub-heading">Subscribe to our Newsletter</p>
+              <form class="row justify-content-center">
+                <div class="col-auto">
+                  <input type="email" class="form-control" placeholder="Your Email" required />
+                </div>
+                <div class="col-auto">
+                  <button type="submit" class="btn btn-primary subscribe-btn">
+                    Subscribe
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="footermain">
+    <div class="container">
+      <div class="footdiv1">
+        <div class="semifoot1">
+          <div><img src="assets/Group (3).png" alt="" /></div>
+          <div class="companywrap">
+            <div class="comapnylogo">company</div>
+            <div class="companyemail">Info@oasis500.com</div>
+          </div>
+          <div class="socialwrapper">
+            <div class="socialogo">Socials</div>
+            <div class="socialholder">
+              <div class="mediaholder">
+                <img src="assets/Youtube.png" alt="" />
+              </div>
+              <div class="mediaholder">
+                <img src="assets/Vector (9).png" alt="" />
+              </div>
+              <div class="mediaholder">
+                <img src="assets/Insta.png" alt="" />
+              </div>
+              <div class="mediaholder">
+                <img src="assets/Group (2).png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="partnerheader">Our Partners</div>
+          <div class="parterimgwrap">
+            <div><img src="assets/KAFD 1.png" alt="" /></div>
+            <div><img src="assets/USAID 1.png" alt="" /></div>
+            <div><img src="assets/ISSF 1.png" alt="" /></div>
+            <div><img src="assets/Group 28186712.png" alt="" /></div>
+            <div><img src="assets/Group 28186711.png" alt="" /></div>
+          </div>
+        </div>
+      </div>
+      <div class="rightreserved">© 2020 Oasis500. All rights reserved.</div>
+    </div>
+  </div>
+
+  <!-- who we are -->
+  <div class="whowearemain">
+    <div class="container whowrap">
+      <div><img src="assets/Group 28186981.png" alt="" /></div>
+      <div class="slidermain1">
+        <div class="slider-container">
+          <div class="slider-content">
+            <h2 class="slider-heading" id="slider-heading">Who We Are?</h2>
+            <div class="slider1line"></div>
+            <p class="slider-paragraph" id="slider-paragraph">
+              A pre-seed and seed fund manager with an acceleration arm that
+              offers growth support services, that invest in high-growth
+              Information & Communication Technologies & creatively designed
+              product startups at their early stages, with the aim of
+              advancing the entrepreneurial ecosystem in Jordan and the MENA
+              region.
+            </p>
+          </div>
+          <div class="d-flex buttonholder">
+            <button class="arrow-btn" id="prev-btn">
+              <img src="assets/Vector (10).png" alt="" />
+            </button>
+            <button class="arrow-btn" id="next-btn">
+              <img src="assets/Vector (11).png" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="assets/Frame black.png" alt="" class="whoframe" />
+  </div>
+
+  <!-- clientspeak -->
+  <div class="clientmain">
+    <div class="container ">
+      <div class="clienthead">Know what <span class="clientheadspan">Client Speaks</span></div>
+      <div class="clientpara">
+        Our Clients send us bunch of smilies with our services and we love them
+      </div>
+
+      <div class="row align-items-center slider2main ">
+        <div class="col-lg-4">
+          <div class="testimonial-image-container">
+            <img id="testimonial-slider-image"
+              src="investment-html-main/assets/Check_3_Pcs_Suit_In_Maroon_Wester-CPNM1977R1BA23FL-image1.webp"
+              class="testimonial-client-image" alt="Client" />
+            <div class="testimonial-company-info">
+              <h5 id="testimonial-slider-name" class="companyemploye"></h5>
+              <p id="testimonial-slider-company" class="companymainname"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div>
+            <div class="testimonial-content-box">
+              <p id="testimonial-slider-text" class="slider2-text"></p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex slider2gap">
+                <img src="assets/Check_3_Pcs_Suit_In_Maroon_Wester-CPNM1977R1BA23FL-image1.webp" alt="Client 1"
+                  class="testimonial-avatar " />
+                <img src="assets/IMG_0228_754a69c3-fbcd-41c4-9b39-9191ceb64cf4.webp" alt="Client 2"
+                  class="testimonial-avatar " />
+                <img src="assets/MSU-0006_F.webp" alt="Client 3" class="testimonial-avatar " />
+                <img src="assets/SageGreenThreePiece_1.webp" alt="Client 4" class="testimonial-avatar me-2" />
+                <img src="assets/spotlight-collection-mens-2.webp" alt="Client 5" class="testimonial-avatar" />
+              </div>
+            </div>
+            <div class="buttonholder">
+              <button id="testimonial-slider-prev" class="testimonial-nav-btn">
+                <img src="./assets/Vector.png" alt="">
+              </button>
+              <button id="testimonial-slider-next" class="testimonial-nav-btn">
+                <img src="./assets/Vector (1).png" alt="" style="margin-right: 0px;">
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="assets/Frame.png" alt="" class="frameiconslider" />
+
+  </div>
+
+  <script>
+    const hamburgerBtn = document.getElementById("hamburger-btn");
+    const navmenu = document.getElementById("navmenu");
+
+    // Toggle menu visibility on small screens
+    hamburgerBtn.addEventListener("click", function () {
+      navmenu.classList.toggle("show");
+    });
+
+    const dropdownToggle = document.getElementById("selectedLanguage");
+    const dropdownMenu = document.getElementById("languageDropdown");
+    const flag = document.getElementById("flag");
+    const language = document.getElementById("language");
+
+    // Toggle dropdown visibility
+    dropdownToggle.addEventListener("click", function () {
+      dropdownMenu.classList.toggle("show");
+    });
+
+    // Change language when an option is selected
+    dropdownMenu.addEventListener("click", function (e) {
+      if (
+        e.target.tagName === "LI" ||
+        e.target.parentElement.tagName === "LI"
+      ) {
+        const listItem =
+          e.target.tagName === "LI" ? e.target : e.target.parentElement;
+        const newFlag = listItem.getAttribute("data-flag");
+        const newLang = listItem.getAttribute("data-lang");
+        flag.src = newFlag;
+        flag.alt = newLang;
+        language.textContent = newLang;
+        dropdownMenu.classList.remove("show");
+      }
+    });
+
+    // Close the dropdown when clicking outside
+    window.addEventListener("click", function (e) {
+      if (
+        !dropdownToggle.contains(e.target) &&
+        !dropdownMenu.contains(e.target)
+      ) {
+        dropdownMenu.classList.remove("show");
+      }
+    });
+  </script>
+
+  <script>
+    // Get elements
+    const applyButton = document.getElementById("applyButton");
+    const investmentDiv = document.getElementById("investmentDiv");
+    const closeBtn = document.getElementById("closeBtn");
+
+    // Show div when button is clicked
+    applyButton.addEventListener("click", function () {
+      investmentDiv.style.display = "block"; // Show the investment div
+    });
+
+    // Hide div when close button is clicked
+    closeBtn.addEventListener("click", function () {
+      investmentDiv.style.display = "none"; // Hide the investment div
+    });
+  </script>
+
+  <!-- slider1 -->
+  <script>
+    const contents = [
+      {
+        heading: "Who We Are?",
+        paragraph:
+          "A pre-seed and seed fund manager with an acceleration arm that offers growth support services, that invest in high-growth Information & Communication Technologies & creatively designed product startups at their early stages, with the aim of advancing the entrepreneurial ecosystem in Jordan and the MENA region.",
+      },
+      {
+        heading: "Our Mission",
+        paragraph:
+          "To empower innovative startups and foster technological advancement in the MENA region, driving economic growth and creating opportunities for talented entrepreneurs.become the leading catalyst for technological innovation advancing the entrepreneurial ecosystem in Jordan",
+      },
+      {
+        heading: "Our Vision",
+        paragraph:
+          "To become the leading catalyst for technological innovation and entrepreneurial success in Jordan and the broader MENA region, shaping a vibrant and sustainable startup ecosystem fund manager with an acceleration arm that offers growth support services.startups and foster technological advancement in the MENA region,",
+      },
+    ];
+
+    let currentIndex = 0;
+    const headingElement = document.getElementById("slider-heading");
+    const paragraphElement = document.getElementById("slider-paragraph");
+    const prevBtn = document.getElementById("prev-btn");
+    const nextBtn = document.getElementById("next-btn");
+
+    function updateContent() {
+      headingElement.textContent = contents[currentIndex].heading;
+      paragraphElement.textContent = contents[currentIndex].paragraph;
+    }
+
+    prevBtn.addEventListener("click", () => {
+      console.log("hjhj");
+      currentIndex = (currentIndex - 1 + contents.length) % contents.length;
+      updateContent();
+    });
+
+    nextBtn.addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % contents.length;
+      updateContent();
+    });
+  </script>
+
+  <!-- slider2 -->
+  <script>
+    const testimonialData = [
+      {
+        name: "Hassan Atmeh",
+        company: "Repzo",
+        image:
+          "assets/Check_3_Pcs_Suit_In_Maroon_Wester-CPNM1977R1BA23FL-image1.webp",
+        text: "Oasis500 has helped us build a product, go to market, acquire customers and raise funding. A true investment partner.",
+      },
+      {
+        name: "Sarah Johnson",
+        company: "TechInnovate",
+        image: "assets/IMG_0228_754a69c3-fbcd-41c4-9b39-9191ceb64cf4.webp",
+        text: "Working with Oasis500 has been transformative for our startup. Their guidance and support have been invaluable.",
+      },
+      {
+        name: "Ahmed Al-Mansour",
+        company: "DataDrive",
+        image: "assets/MSU-0006_F.webp",
+        text: "Oasis500's network and mentorship program gave us the boost we needed to scale our operations across the MENA region.",
+      },
+      {
+        name: "Laila Hassan",
+        company: "IQEZ",
+        image: "assets/SageGreenThreePiece_1.webp",
+        text: "The resources and connections provided by Oasis500 were instrumental in helping us expand our market reach.",
+      },
+      {
+        name: "Omar Farooq",
+        company: "TechVista",
+        image: "assets/spotlight-collection-mens-2.webp",
+        text: "Oasis500's expertise in the MENA startup ecosystem has been crucial for our growth and success in the region.",
+      },
+    ];
+
+    let currentTestimonialIndex = 0;
+
+    const testimonialImage = document.getElementById(
+      "testimonial-slider-image"
+    );
+    const testimonialContent = document.getElementById(
+      "testimonial-slider-text"
+    );
+    const testimonialName = document.getElementById(
+      "testimonial-slider-name"
+    );
+    const testimonialCompany = document.getElementById(
+      "testimonial-slider-company"
+    );
+    const testimonialPrevBtn = document.getElementById(
+      "testimonial-slider-prev"
+    );
+    const testimonialNextBtn = document.getElementById(
+      "testimonial-slider-next"
+    );
+
+    function updateTestimonialSlider() {
+      const testimonial = testimonialData[currentTestimonialIndex];
+      testimonialImage.src = testimonial.image;
+      testimonialContent.textContent = testimonial.text;
+      testimonialName.textContent = testimonial.name;
+      testimonialCompany.textContent = testimonial.company;
+    }
+
+    testimonialPrevBtn.addEventListener("click", () => {
+      currentTestimonialIndex =
+        (currentTestimonialIndex - 1 + testimonialData.length) %
+        testimonialData.length;
+      updateTestimonialSlider();
+    });
+
+    testimonialNextBtn.addEventListener("click", () => {
+      currentTestimonialIndex =
+        (currentTestimonialIndex + 1) % testimonialData.length;
+      updateTestimonialSlider();
+    });
+
+    // Initialize the testimonial slider
+    updateTestimonialSlider();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

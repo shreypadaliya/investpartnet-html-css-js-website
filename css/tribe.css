@@ -1,0 +1,101 @@
+.ourtribemain {
+  padding: 62px 0px 80px 0px;
+  background-color: #f4f8fa;
+  overflow: hidden;
+}
+
+.tribesemi {
+  background-color: #f4f8fa;
+}
+
+.tribe1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.frame1div {
+  padding: 15px 30px;
+  background-color: #004c6d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.frame1div:hover {
+  box-shadow: 0 4px 8px #004c6d;
+}
+
+.hline {
+  height: 5px;
+  border-radius: 5px;
+  width: 127px;
+  background-color: #004c6d;
+  margin-bottom: 57px;
+}
+.tribehead {
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 50.4px;
+  color: #004c6d;
+  font-family: "poppins";
+  margin-bottom: 22px;
+}
+
+.headwrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-fluid {
+  width: 100%;
+  max-width: 254px;
+}
+
+.imagespace {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .tribe1 {
+    flex-direction: row;
+  }
+
+  .hline {
+    margin-bottom: 30px;
+  }
+
+  .imagespace {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .imagespace .col-6 {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .tribe1 {
+    flex-direction: column;
+  }
+
+  .tribehead {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 15px;
+  }
+
+  .frame1div {
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .imagespace .col-6 {
+    width: 50%;
+  }
+}

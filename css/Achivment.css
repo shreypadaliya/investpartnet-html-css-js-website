@@ -1,0 +1,194 @@
+.achievementmain {
+  width: 100%;
+  background-image: url("../assets/Mask\ group\ \(5\).png");
+  display: flex;
+  flex-direction: column;
+  padding: 76px 0px 126px 0px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.achievetitle {
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 53px;
+  font-family: "poppins";
+  color: white;
+}
+.achiveline {
+  background-color: white;
+  border-radius: 5px;
+  height: 5px;
+  width: 155px;
+  margin-top: 24px;
+}
+.achivesemiwrap {
+  display: flex;
+  align-items: center;
+}
+
+.achievespace {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.achivesemihead {
+  font-size: 42px;
+  line-height: 49px;
+  font-weight: 700;
+  font-family: "Roboto";
+  color: white;
+}
+
+.achivesemisub {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  font-family: "Roboto";
+  color: #ffffffb2;
+  display: flex;
+  text-align: start;
+}
+
+.achivemargin1 {
+  margin-top: 70px;
+}
+
+.achivemargin2 {
+  margin-top: 129px;
+}
+
+.latterwrap {
+  gap: 10px;
+}
+.achivesemiwrap {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.achiveiconwrap {
+  height: 54px;
+  width: 54px;
+}
+
+@media (max-width: 1200px) {
+  .achivesemiwrap {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .achivemargin1 {
+    margin-top: 40px;
+  }
+
+  .achivemargin2 {
+    margin-top: 39px;
+  }
+}
+
+@media (max-width: 992px) {
+  .achivesemiwrap {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .achivemargin1 {
+    margin-top: 0px;
+  }
+
+  .achivemargin2 {
+    margin-top: 9px;
+  }
+}
+
+@media (max-width: 768px) {
+  .achivesemiwrap {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .achivesemiwrap {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .achievetitle {
+    font-size: 38px;
+  }
+
+  .achivesemihead {
+    font-size: 38px;
+  }
+
+  .achivesemisub {
+    font-size: 16px;
+  }
+
+  .achiveiconwrap {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .achievetitle {
+    font-size: 36px;
+  }
+
+  .achivesemihead {
+    font-size: 36px;
+  }
+
+  .achivesemisub {
+    font-size: 15px;
+  }
+
+  .achiveiconwrap {
+    height: 48px;
+    width: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .achievetitle {
+    font-size: 34px;
+  }
+
+  .achivesemihead {
+    font-size: 34px;
+  }
+
+  .achivesemisub {
+    font-size: 14px;
+  }
+
+  .achiveiconwrap {
+    height: 46px;
+    width: 46px;
+  }
+}
+
+@media (max-width: 576px) {
+  .achievetitle {
+    font-size: 32px;
+  }
+
+  .achivesemihead {
+    font-size: 32px;
+  }
+
+  .achivesemisub {
+    font-size: 13px;
+  }
+
+  .achiveiconwrap {
+    height: 44px;
+    width: 44px;
+  }
+}
