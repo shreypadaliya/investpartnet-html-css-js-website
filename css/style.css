@@ -55,6 +55,7 @@ body {
 
   .dropdown:hover .dropdown-menu {
     display: block;
+    
   }
 
   .dropdown-menu li {
@@ -62,11 +63,11 @@ body {
   }
 
   .dropdown-menu li a {
-    color: #6c738c;
+    color: #004C6D;
     text-decoration: none;
   }
 
-  .dropdown-menu li a:hover {
+  .dropdown-menu li:hover {
     color: #6c738c;
   }
 
